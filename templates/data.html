@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static' , filename='img/apple-icon.png') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static' , filename='img/iris_logo.jpg') }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <script type='text/javascript' src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+    <script type='text/javascript' src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" ></script>
+    <script type='text/javascript' src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js" ></script>
+    <link href="{{ url_for('static' , filename='css/now-ui-dashboard.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static' , filename='css/bootstrap-toggle.min.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static' , filename='js/bootstrap-toggle.min.js') }}" rel="stylesheet" />
+
+    <script>
+     $(document).ready(function() {
+    $('#example').DataTable();
+} );
+   </script> 
+    
+    
+    <title>
+    Iris
+    </title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+    
+  </head>
+  <body class="">
+    
+    <div class="wrapper ">
+      <div class="overlay">
+        <div class="loader"></div>
+      </div>
+      <div class="sidebar" data-color="orange">
+        <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+        -->
+        <div class="logo">
+         
+            
+            <a href="#" class="simple-text logo-normal">
+              &nbsp;&nbsp;Iris data
+            </a>
+         
+        </div>
+        <div class="sidebar-wrapper">
+          <ul class="nav">
+            <li class="active ">
+              <a href="./dashboard">
+                <i class="now-ui-icons design_app"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-panel">
+        <!-- Navbar -->
+        <div class="content">
+          <nav class="navbar navbar-expand-lg navbar-transparent  navbar-absolute bg-primary fixed-top">
+            
+          </nav>
+          <!-- End Navbar -->
+          <div class="">
+            <canvas id="bigDashboardChart"></canvas>
+          </div>
+          <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+               {% for column in columns %}
+                <th>{{column}}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+          {% for row in data %}
+            <tr>
+              {% for element in row %}
+                <td>{{ element }}</td>
+                {% endfor %}
+                
+            </tr>
+            {% endfor %}
+                
+    </table>
+          
+          
+          
+          
+          <!-- Button trigger modal -->
+          
+          
+          
+          <footer class="footer">
+            <div class="container-fluid">
+             
+                
+                <a href="" target="_blank"></a>.
+                
+              </div>
+            </div>
+          </footer>
+          
+        </div>
+        <!--   Core JS Files   -->
+                  
+        </body>
+      </html>

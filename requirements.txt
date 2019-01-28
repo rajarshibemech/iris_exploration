@@ -1,0 +1,11 @@
+Flask
+Flask-Bootstrap
+Jinja2
+bokeh
+numpy
+pandas
+scikit-learn
+waitress
+requests
+
+
