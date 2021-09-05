@@ -31,3 +31,5 @@
 You can find a deployed copy of the app at https://iris-exploration.herokuapp.com/dashboard
 
 
+![Screenshots](/statuc/img/data_quality.png)
+
