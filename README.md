@@ -1,6 +1,6 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-
+An exploration and prediction done on the iris dataset useful for data enthusiasts
 
 ### Quick Start
 
