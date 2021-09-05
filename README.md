@@ -31,5 +31,6 @@
 You can find a deployed copy of the app at https://iris-exploration.herokuapp.com/dashboard
 
 
-![Screenshots](https://github.com/rajarshibemech/iris_exploration/blob/master/static/img/data_quality.png)
-
+![Data Quality](https://github.com/rajarshibemech/iris_exploration/blob/master/static/img/data_quality.png)
+![PLots](https://github.com/rajarshibemech/iris_exploration/blob/master/static/img/plots.png)
+![Predictions](https://github.com/rajarshibemech/iris_exploration/blob/master/static/img/prediction_plots.png)
